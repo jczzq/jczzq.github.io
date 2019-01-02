@@ -20,16 +20,20 @@
     <noscript>要查看<a href="http://disqus.com/?ref_noscript"> Disqus </a>评论，请启用 JavaScript</noscript>
     
   {% elsif site.comment.duoshuo %}
-    <div class="ds-thread" data-thread-key="{{ page.url }}" data-title="{{ page.title }}" data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></div>
-    <script type="text/javascript">
-        var duoshuoQuery = {short_name:"{{ site.comment.duoshuo }}"};
-        (function() {
-            var ds = document.createElement('script');
-            ds.type = 'text/javascript';ds.async = true;
-            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-            ds.charset = 'UTF-8';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
-        })();
+    <div id="comment-container"></div>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+      var gitment = new Gitment({
+        id: '页面 ID', // 可选。默认为 location.href
+        owner: '你的 GitHub ID',
+        repo: '存储评论的 repo',
+        oauth: {
+          client_id: '你的 client ID',
+          client_secret: '你的 client secret',
+        },
+      })
+      gitment.render('comment-container')
     </script>
   {% endif %}
   
