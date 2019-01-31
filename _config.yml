@@ -79,4 +79,4 @@ theme: landscape
 deploy:
   type: git
   repository: https://github.com/jczzq/jczzq.github.io.git
-  branch: master
+  branch: release
