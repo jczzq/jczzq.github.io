@@ -1,9 +1,28 @@
 module.exports = {
-  title: "jacob",
+  title: "jczzq",
   description: "jczzq's blog",
   head: [["link", { rel: "icon", href: "/logo.ico" }]],
   themeConfig: {
-    nav: [{ text: "Home", link: "/" }],
-    sidebar: ["/使用vuepress"]
+    logo: "/logo.png",
+    nav: [
+      {
+        text: 'Books',
+        ariaLabel: 'Books Menu',
+        items: [
+          { text: "Nuxt.js Analysis", link: "/nuxt/" },
+        ]
+      }
+    ],
+    sidebar: {
+      "/nuxt/": [
+        "" /* /nuxt/ */,
+        "menu", /* /nuxt/menu.html */
+        "ci_cd",
+        "babel-preset"
+      ],
+
+      // fallback
+      "/": ["", "vuepress-start"]
+    }
   }
 };
