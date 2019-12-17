@@ -10,6 +10,7 @@ module.exports = {
         ariaLabel: 'Books Menu',
         items: [
           { text: "Nuxt.js Analysis", link: "/nuxt/" },
+          { text: "Gener Cookbook", link: "/gener/" },
         ]
       }
     ],
@@ -19,6 +20,10 @@ module.exports = {
         "menu", /* /nuxt/menu.html */
         "ci_cd",
         "babel-preset"
+      ],
+      "/gener/": [
+        "" /* /nuxt/ */,
+        "model/page",
       ],
 
       // fallback

@@ -37,29 +37,31 @@ title: 目录结构（v2.10.2）
 
 ### packages源码目录
 ``` bash
-.
-├── packages
-│   ├── babel-preset-app                  # nuxt默认的babel preset
-│   │   ├── src
-│   │   │   ├── index.js
-│   │   │   └── polyfills-plugin.js
-│   │   └── package.json
-│   │ 
-│   ├── builder                           # nuxt默认的babel preset
-│   │   ├── src
-│   │   │   ├── context
-│   │   │   │   └── context
-│   │   │   ├── index.js
-│   │   │   ├── ignore.js
-│   │   │   └── builder.js
-│   │   └── package.json
-│   │ 
-│   ├── babel-preset-app                  # nuxt默认的babel preset
-│   │   ├── src
-│   │   │   ├── index.js
-│   │   │   └── polyfills-plugin.js
-│   └───└── package.json
-└────────────────────────────
+babel-preset-app                  # 
+├── src
+│   ├── index.js
+│   └── polyfills-plugin.js
+└── package.json
+```
+nuxt默认的babel preset
+
+``` bash
+builder                           # nuxt默认的babel preset
+├── src
+│   ├── context
+│   │   └── context
+│   ├── index.js
+│   ├── ignore.js
+│   └── builder.js
+└── package.json
+```
+
+``` bash
+babel-preset-app                  # nuxt默认的babel preset
+├── src
+│   ├── index.js
+│   └── polyfills-plugin.js
+└── package.json
 ```
 
 ## 参考链接

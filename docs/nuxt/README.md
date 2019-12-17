@@ -9,6 +9,8 @@ features:
   - title: 快捷路由
     details: Nuxt是如何通过文件名映射路由的？
   - title: 静态文件服务
-    details: nuxt generate 是如何为动态服务生成对应的静态站点的？
-footer: MIT Licensed | Copyright © 2018-present Evan You
+    details: Nuxt是如何为动态服务生成静态站点的？
+  - title: asyncData
+    details: Nuxt是如何执行服务端钩子的？
+footer: MIT Licensed | Copyright © 2019-present Evan You
 ---

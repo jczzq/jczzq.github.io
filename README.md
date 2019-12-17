@@ -1,4 +1,8 @@
 '# Hello VuePress!' 
+## 启动
+```
+npm run dev
+```
 
 ## 目录结构
 VuePress 遵循 “约定优于配置” 的原则，推荐的目录结构如下：
